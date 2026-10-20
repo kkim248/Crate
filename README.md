@@ -6,6 +6,10 @@ Crate reads your `.flp` files and audio exports, then lets you browse, play, sor
 
 ## Try the demo
 
+Live: https://kkim248.github.io/Crate/
+
+Or run it yourself:
+
 ```bash
 npm --prefix app install
 npm --prefix app run dev:demo

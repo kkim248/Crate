@@ -11,7 +11,7 @@ import path from 'node:path'
 //
 // Demo mode (CRATE_DEMO=1) serves the sample data in ../demo instead, so the app runs
 // without any FL Studio files.
-const DEMO = process.env.CRATE_DEMO === '1'
+const DEMO = process.env.CRATE_DEMO === '1' || process.argv.includes('demo')   // `vite --mode demo` works on every OS
 const ROOT = path.resolve(__dirname, '..')
 const DEMO_DIR = path.join(ROOT, 'demo')
 const CRATE_JSON = DEMO ? path.join(DEMO_DIR, 'crate.demo.json') : path.join(ROOT, 'crate.json')
@@ -114,4 +114,7 @@ function cratePlugin(): Plugin {
   }
 }
 
-export default defineConfig({ plugins: [react(), cratePlugin()] })
+export default defineConfig(({ mode }) => ({
+  base: mode === 'static' ? './' : '/',   // the hosted demo lives under a sub-path
+  plugins: [react(), cratePlugin()],
+}))

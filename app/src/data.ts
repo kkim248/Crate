@@ -39,11 +39,15 @@ export type Summary = {
 
 export type Crate = { summary: Summary; projects: Project[] }
 
+// In the hosted demo there is no server: the same data is served as plain files.
+const STATIC = import.meta.env.VITE_STATIC === '1'
+const dataUrl = (name: 'crate' | 'details' | 'loudness') => (STATIC ? `demo/${name}.json` : `/api/${name}`)
+
 export function useCrate() {
   const [crate, setCrate] = useState<Crate | null>(null)
   const [error, setError] = useState<string | null>(null)
   useEffect(() => {
-    fetch('/api/crate')
+    fetch(dataUrl('crate'))
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then(setCrate)
       .catch((e) => setError(String(e.message ?? e)))
@@ -97,7 +101,7 @@ export function useDetails(): [Details, boolean] {
   const [d, setD] = useState<Details>({})
   const [ready, setReady] = useState(false)
   useEffect(() => {
-    fetch('/api/details').then((r) => (r.ok ? r.json() : {})).then(setD).catch(() => setD({})).finally(() => setReady(true))
+    fetch(dataUrl('details')).then((r) => (r.ok ? r.json() : {})).then(setD).catch(() => setD({})).finally(() => setReady(true))
   }, [])
   return [d, ready]
 }
@@ -106,7 +110,7 @@ export type Loud = Record<string, { lufs: number; peak: number }>
 export function useLoudness(): Loud {
   const [l, setL] = useState<Loud>({})
   useEffect(() => {
-    fetch('/api/loudness').then((r) => (r.ok ? r.json() : {})).then(setL).catch(() => setL({}))
+    fetch(dataUrl('loudness')).then((r) => (r.ok ? r.json() : {})).then(setL).catch(() => setL({}))
   }, [])
   return l
 }
