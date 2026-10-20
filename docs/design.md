@@ -238,6 +238,18 @@ Every value comes from a token, never an ad-hoc number.
 
 One rounded window on one background. Inside it, a 12px gap separates every panel. The library is three columns: filters (264px), the project list, and the detail panel (380px). Below 1180px the detail panel becomes a drawer opened by selecting a row. Listen is two panels (now playing and the queue). Recap is a 12-column grid of tiles. A player bar sits at the bottom on every page except Listen. Content scrolls inside panels, never the page.
 
+## Mobile
+
+Below 900px the same system switches to a phone layer, built on the patterns of Apple Music, Spotify and Deezer.
+
+- **Structure:** a large page title, a bottom tab bar with labelled icons, and a mini player that floats above it. The window frame goes away and the app is full-bleed with safe-area insets for the notch and home indicator.
+- **Library:** a sticky search bar with sort and filter buttons, quick filter chips (All, Playable, No audio) and a flat list. Full filters open in a bottom sheet with a grabber.
+- **Project details:** a bottom sheet with a grabber, a scrim and rounded top corners. The details popup becomes a tall sheet. Menus open as bottom sheets.
+- **Listen:** one scrolling screen with a large ring, the track name, a scrubber and four equal actions with icon above label. The queue sits below.
+- **Recap:** one column of tiles.
+- **Touch rules:** tap targets are 40px or larger (44px for list play buttons), text inputs are 16px so iOS does not zoom, and hover is never required. The type scale steps down (hero 32, title 26) and the large radii tighten (panel 24, dialog 28).
+- Between 721 and 900px the same layout is used in a centred 680px column.
+
 ## Elevation & Depth
 
 Surfaces are tonal first (shell, panel, card). Shadows are tinted indigo-grey, never black. Neumorphic raise and inset are reserved for small controls (round play buttons, the search well). Glass is not used. Motion is short and purposeful: crossfades between views, a tick ring that follows the audio spectrum, and an equaliser mark on the playing queue row. Everything respects `prefers-reduced-motion`.

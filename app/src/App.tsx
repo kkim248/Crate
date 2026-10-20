@@ -102,6 +102,7 @@ export default function App() {
     raw.projects.forEach((p) => { if (loud[p.folder]) m[p.id] = loud[p.folder] })
     setLoudness(m)
   }, [raw, loud])
+  const playerId = usePlayer().id
   const [page, setPage] = useState<Page>('library')
   const [session, setSession] = useState<{ id: number; queue: Project[] } | null>(null)
   const [focus, setFocus] = useState<{ id: number; n: number } | null>(null)
@@ -119,7 +120,7 @@ export default function App() {
   return (
     <>
       <a className="skip" href="#content">Skip to content</a>
-      <div className="app">
+      <div className="app" data-player={playerId !== null && page !== 'listen' ? '1' : undefined}>
         <nav className="rail" aria-label="Main">
           <Mark size={44} />
           <div className="items">

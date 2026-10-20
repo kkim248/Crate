@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import {
-  Archive, CalendarBlank, Check, CaretDown, Clock, FolderOpen, Heart, Headphones, ListMagnifyingGlass, MagnifyingGlass, Pause, Play, Repeat, SpeakerHigh, SpeakerSlash, Stack, TextAa, X,
+  Archive, CalendarBlank, Check, CaretDown, Clock, FolderOpen, Heart, Headphones, ListMagnifyingGlass, MagnifyingGlass, Pause, Play, SlidersHorizontal, Repeat, SpeakerHigh, SpeakerSlash, Stack, TextAa, X,
 } from '@phosphor-icons/react'
 import { STAGES, hideToast, reveal, setFlag, showToast, type Crate, type Details, type Flag, type Project } from './data'
 import { Inspector } from './Inspector'
@@ -154,6 +154,14 @@ export function CratePage({ crate, flags, details, onListen, focus }: { crate: C
     m.addEventListener('change', f)
     return () => m.removeEventListener('change', f)
   }, [])
+  const [mobile, setMobile] = useState(() => matchMedia('(max-width: 900px)').matches)
+  const [filtersOpen, setFiltersOpen] = useState(false)
+  useEffect(() => {
+    const m = matchMedia('(max-width: 900px)')
+    const f = () => { setMobile(m.matches); if (!m.matches) setFiltersOpen(false) }
+    m.addEventListener('change', f)
+    return () => m.removeEventListener('change', f)
+  }, [])
   const [query, setQuery] = useState('')
   const [heard, setHeard] = useState<Heard>('all')
   const [stage, setStage] = useState<string>('any')
@@ -248,12 +256,23 @@ export function CratePage({ crate, flags, details, onListen, focus }: { crate: C
     if (stage !== 'any' && !crate.projects.some((p) => p.stage === stage)) setStage('any')
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [flags, crate, triage, stage])
+  const activeCount = (heard !== 'all' ? 1 : 0) + (stage !== 'any' ? 1 : 0) + (triage !== 'active' ? 1 : 0)
+  useEffect(() => {
+    if (!filtersOpen && !drawer) return
+    const h = (e: KeyboardEvent) => { if (e.key === 'Escape' && !inspect) { setFiltersOpen(false); setDrawer(false) } }
+    window.addEventListener('keydown', h)
+    return () => window.removeEventListener('keydown', h)
+  }, [filtersOpen, drawer, inspect])
   const filtered = heard !== 'all' || stage !== 'any' || triage !== 'active' || needle !== ''
   const reset = () => { setHeard('all'); setStage('any'); setTriage('active'); setQuery('') }
 
   return (
     <div className="lib">
-      <aside className="panel filters" aria-label="Filters">
+      {(filtersOpen || (drawer && narrow)) && <div className="sheetscrim" onClick={() => { setFiltersOpen(false); setDrawer(false) }} aria-hidden />}
+      <aside className={`panel filters sheet${filtersOpen ? ' open' : ''}`} aria-label="Filters" inert={mobile && !filtersOpen ? true : undefined}>
+        <span className="sheetgrab" aria-hidden />
+        <button className="sheetclose" onClick={() => setFiltersOpen(false)} aria-label="Close filters"><X size={20} /></button>
+        <h2 className="sheettitle">Filters</h2>
         <div className="phead split"><div><h1>Library</h1><p>{crate.projects.length} projects{crate.summary.demo ? ', demo' : ''}</p></div><MiniRing done={Object.keys(flags).length} total={crate.projects.length} label={`${Object.keys(flags).length} of ${crate.projects.length} projects sorted`} /></div>
 
         <div className="fgroup" role="group" aria-label="Show">
@@ -284,17 +303,32 @@ export function CratePage({ crate, flags, details, onListen, focus }: { crate: C
         )}
 
         <div className="grow" />
-        <button className="btn-primary" onClick={onListen}><Headphones size={20} weight="fill" aria-hidden /> Start listening</button>
+        <button className="btn-primary" onClick={() => { setFiltersOpen(false); onListen() }}><Headphones size={20} weight="fill" aria-hidden /> Start listening</button>
       </aside>
 
       <section className="panel listpanel" aria-label="Projects">
-        <div className="lbar">
-          <label className="search">
-            <MagnifyingGlass size={20} weight="light" aria-hidden />
-            <input ref={searchRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search projects" aria-label="Search projects" />
-            {query && <button type="button" className="x" aria-label="Clear search" onClick={() => setQuery('')}><X size={16} /></button>}
-          </label>
-          <SortMenu value={sort} onChange={(v) => { setSort(v); save('crate.sort', v) }} />
+        <header className="mhead">
+          <div><h1>Library</h1><p>{crate.projects.length} projects{crate.summary.demo ? ', demo' : ''}</p></div>
+          <MiniRing done={Object.keys(flags).length} total={crate.projects.length} label={`${Object.keys(flags).length} of ${crate.projects.length} projects sorted`} />
+        </header>
+        <div className="lstick">
+          <div className="lbar">
+            <label className="search">
+              <MagnifyingGlass size={20} weight="light" aria-hidden />
+              <input ref={searchRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search projects" aria-label="Search projects" />
+              {query && <button type="button" className="x" aria-label="Clear search" onClick={() => setQuery('')}><X size={16} /></button>}
+            </label>
+            <SortMenu value={sort} onChange={(v) => { setSort(v); save('crate.sort', v) }} />
+            <button className="filterbtn" onClick={() => setFiltersOpen(true)} aria-label={activeCount ? `Filters, ${activeCount} active` : 'Filters'} aria-haspopup="dialog">
+              <SlidersHorizontal size={20} weight="light" aria-hidden />
+              {activeCount > 0 && <span className="fdot" aria-hidden>{activeCount}</span>}
+            </button>
+          </div>
+          <div className="quick" role="group" aria-label="What you can hear">
+            {([['all', 'All', () => true], ['playable', 'Playable', (p: Project) => !!p.audio], ['noaudio', 'No audio', (p: Project) => !p.audio]] as [Heard, string, (p: Project) => boolean][]).map(([id, l, fn]) => (
+              <button key={id} aria-pressed={heard === id} onClick={() => setHeard(id)}>{l}<span className="count">{count(fn, 'heard')}</span></button>
+            ))}
+          </div>
         </div>
         <p className="status" role="status" aria-live="polite">
           {shown.length} of {crate.projects.length}
@@ -315,7 +349,7 @@ export function CratePage({ crate, flags, details, onListen, focus }: { crate: C
                       <button
                         className={`rplay${playing ? ' live' : ''}`}
                         disabled={!p.audio}
-                        onClick={() => { choosePick(p.id); if (p.audio) { if (player.id === p.id) toggle(); else play({ id: p.id, audio: p.audio }) } }}
+                        onClick={() => { setPick(p.id); if (p.audio) { if (player.id === p.id) toggle(); else play({ id: p.id, audio: p.audio }) } }}
                         aria-label={p.audio ? `${playing ? 'Pause' : 'Play'} ${p.name}` : `${p.name} has no audio`}
                       >
                         {!p.audio ? <SpeakerSlash size={20} weight="light" /> : playing ? <Pause weight="fill" size={16} /> : <Play weight="fill" size={16} />}
