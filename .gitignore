@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+.claude/
+
+# Your real library data stays on your machine (project names, dates, local paths)
+/crate.json
+/details.json
+/loudness.json

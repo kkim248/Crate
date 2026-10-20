@@ -1,0 +1,1956 @@
+{
+ "hopefully will save this for the asia planeflight": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "Serum 2",
+    "count": 4,
+    "kind": "VST"
+   },
+   {
+    "name": "ZENOLOGY",
+    "count": 3,
+    "kind": "VST"
+   },
+   {
+    "name": "Diva",
+    "count": 1,
+    "kind": "VST"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Fruity Soft Clipper",
+    "count": 1,
+    "kind": "Native"
+   },
+   {
+    "name": "Emphasizer",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 0,
+  "samples": [
+   {
+    "name": "best kick ever #2",
+    "source": "parkinglots"
+   },
+   {
+    "name": "CHNNL_clap_plain",
+    "source": "parkinglots"
+   },
+   {
+    "name": "(snare) shake",
+    "source": "parkinglots"
+   },
+   {
+    "name": "EEnE Ping Pong 3",
+    "source": "parkinglots"
+   },
+   {
+    "name": "hats - buy walzy kit",
+    "source": "parkinglots"
+   },
+   {
+    "name": "! SNARE - XAN @shadx2",
+    "source": "SNARE"
+   },
+   {
+    "name": "Ariana Grande - obvious (official audio)-vocals-C major-80bpm-440hz",
+    "source": "Desktop"
+   },
+   {
+    "name": "FIRELEAD two !",
+    "source": "one shots"
+   },
+   {
+    "name": "808 SHORT - FLAME @shadx2",
+    "source": "808"
+   },
+   {
+    "name": "808 SHORT - GLOW @shadx2",
+    "source": "808"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "parkinglots",
+    "count": 5
+   },
+   {
+    "name": "808",
+    "count": 2
+   },
+   {
+    "name": "SNARE",
+    "count": 1
+   },
+   {
+    "name": "Desktop",
+    "count": 1
+   },
+   {
+    "name": "one shots",
+    "count": 1
+   }
+  ],
+  "patterns": 10,
+  "arrangement_bars": 82.2,
+  "playlist_items": 1,
+  "inserts_named": 17,
+  "inserts_total": 20,
+  "file_kb": 965.2
+ },
+ "Buddhist Art": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "Serum 2",
+    "count": 2,
+    "kind": "VST"
+   },
+   {
+    "name": "ZENOLOGY",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "BBC Symphony Orchestra",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Splice Sounds",
+    "count": 1,
+    "kind": "VST"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Fruity Soft Clipper",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 0,
+  "samples": [
+   {
+    "name": "CLAP - bluetooth [Ginseng]",
+    "source": "CLAP"
+   },
+   {
+    "name": "OH - game_over [Ginseng]",
+    "source": "OH"
+   },
+   {
+    "name": "KICK - Bitrate [Ginseng]",
+    "source": "KICK"
+   },
+   {
+    "name": "SNARE - angelblue [Ginseng]",
+    "source": "SNARE"
+   },
+   {
+    "name": "SNARE - aoi [Ginseng]",
+    "source": "SNARE"
+   },
+   {
+    "name": "bounce",
+    "source": "VOX"
+   },
+   {
+    "name": "(808) castra zay",
+    "source": "808s"
+   },
+   {
+    "name": "HH - Cyberdeath [Ginseng]",
+    "source": "HH"
+   },
+   {
+    "name": "DS_CV2_150_vocal_chop_loop_waiting_high_wet_C_145bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "PERC - chime [Ginseng]",
+    "source": "PERC"
+   },
+   {
+    "name": "PERC - Radio [Ginseng]",
+    "source": "PERC"
+   },
+   {
+    "name": "IMPACT - GLASS V6 @shadx2",
+    "source": "IMPACT"
+   },
+   {
+    "name": "PERC - Voicemail [Ginseng]",
+    "source": "PERC"
+   },
+   {
+    "name": "PERC - Rocket [Ginseng]",
+    "source": "PERC"
+   },
+   {
+    "name": "IMPACT - TICK V3 @shadx2",
+    "source": "IMPACT"
+   },
+   {
+    "name": "91V_NS_110_vocal_hook_wide_awake_dry_Fm_145bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "CH - the succ uplifter",
+    "source": "Uplifters"
+   },
+   {
+    "name": "IMPACT - DIGITAL V4 @shadx2",
+    "source": "IMPACT"
+   },
+   {
+    "name": "riser 3",
+    "source": "Crashes + Risers"
+   },
+   {
+    "name": "IMPACT - GLASS V4 @shadx2",
+    "source": "IMPACT"
+   },
+   {
+    "name": "DS_CV2_150_vocal_chop_loop_waiting_high_wet_C_145bpm (consolidated)",
+    "source": "Audio"
+   },
+   {
+    "name": "SNARE - Electric Guitar [Ginseng]",
+    "source": "SNARE"
+   },
+   {
+    "name": "smash ding",
+    "source": "misc~fx"
+   },
+   {
+    "name": "crazy lasers",
+    "source": "misc~fx"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "PERC",
+    "count": 4
+   },
+   {
+    "name": "IMPACT",
+    "count": 4
+   },
+   {
+    "name": "SNARE",
+    "count": 3
+   },
+   {
+    "name": "Splice",
+    "count": 2
+   },
+   {
+    "name": "misc~fx",
+    "count": 2
+   },
+   {
+    "name": "CLAP",
+    "count": 1
+   },
+   {
+    "name": "OH",
+    "count": 1
+   },
+   {
+    "name": "KICK",
+    "count": 1
+   },
+   {
+    "name": "VOX",
+    "count": 1
+   },
+   {
+    "name": "808s",
+    "count": 1
+   },
+   {
+    "name": "HH",
+    "count": 1
+   },
+   {
+    "name": "Uplifters",
+    "count": 1
+   },
+   {
+    "name": "Crashes + Risers",
+    "count": 1
+   },
+   {
+    "name": "Audio",
+    "count": 1
+   }
+  ],
+  "patterns": 4,
+  "arrangement_bars": 20,
+  "playlist_items": 29,
+  "inserts_named": 16,
+  "inserts_total": 19,
+  "file_kb": 402
+ },
+ "Back from Asia": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "ZENOLOGY",
+    "count": 2,
+    "kind": "VST"
+   },
+   {
+    "name": "Serum 2",
+    "count": 2,
+    "kind": "VST"
+   },
+   {
+    "name": "JV-1080",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Diva",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Splice Sounds",
+    "count": 1,
+    "kind": "VST"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Fruity Soft Clipper",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 0,
+  "samples": [
+   {
+    "name": "808 SHORT - SURGICAL @shadx2",
+    "source": "808"
+   },
+   {
+    "name": "DS_GTH2_drum_hat_open_barber",
+    "source": "Splice"
+   },
+   {
+    "name": "CH - fuller crash",
+    "source": "Crashes"
+   },
+   {
+    "name": "! OH - HOUSE @shadx2",
+    "source": "OH"
+   },
+   {
+    "name": "T_TSTN2_kick_oneshot_fifth",
+    "source": "Splice"
+   },
+   {
+    "name": "T_TSCR4_clap_oneshot_pariz",
+    "source": "Splice"
+   },
+   {
+    "name": "KICK - ICE @shadx2",
+    "source": "KICK"
+   },
+   {
+    "name": "OH - FRAG @shadx2",
+    "source": "OH"
+   },
+   {
+    "name": "! CLAP - GO TO @shadx2",
+    "source": "CLAP"
+   },
+   {
+    "name": "! SNARE - XAN @shadx2",
+    "source": "SNARE"
+   },
+   {
+    "name": "SNARE [A] - DORAE @shadx2",
+    "source": "SNARE"
+   },
+   {
+    "name": "SNARE [M] - ACCENT @shadx2",
+    "source": "SNARE"
+   },
+   {
+    "name": "SNARE [M] - ACCENT @shadx2 #2",
+    "source": "SNARE"
+   },
+   {
+    "name": "VOX - GO! @shadx2",
+    "source": "VOX"
+   },
+   {
+    "name": "VOX - UH OH @shadx2",
+    "source": "VOX"
+   },
+   {
+    "name": "IMPACT - 200 PUMP + @shadx2",
+    "source": "IMPACT"
+   },
+   {
+    "name": "FX - CAM FLASH @shadx2",
+    "source": "FX"
+   },
+   {
+    "name": "FX - RELOAD V1 [TS] @shadx2",
+    "source": "FX"
+   },
+   {
+    "name": "PERC - BIKE @shadx2",
+    "source": "PERC"
+   },
+   {
+    "name": "PERC - BONGO @shadx2",
+    "source": "PERC"
+   },
+   {
+    "name": "PERC - CHEST CLOSE [TS] @shadx2",
+    "source": "PERC"
+   },
+   {
+    "name": "PERC - CLAVE @shadx2",
+    "source": "PERC"
+   },
+   {
+    "name": "(perc) brush",
+    "source": "percs~foley"
+   },
+   {
+    "name": "(perc) laser 1",
+    "source": "percs~foley"
+   },
+   {
+    "name": "shake",
+    "source": "percs"
+   },
+   {
+    "name": "CH - yea vox",
+    "source": "Other Voxs"
+   },
+   {
+    "name": "VOX - YEA V2 @shadx2",
+    "source": "VOX"
+   },
+   {
+    "name": "DS_MYRNE_132_vocal_hook_female_loop_feels_right_verse_wet_Cmaj_140bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "VOX - BREATH @shadx2",
+    "source": "VOX"
+   },
+   {
+    "name": "FX - SCRATCH @shadx2",
+    "source": "FX"
+   },
+   {
+    "name": "IMPACT - CHROMATIC V1 Cmaj @shadx2",
+    "source": "IMPACT"
+   },
+   {
+    "name": "TRANSITION - AETHER @shadx2",
+    "source": "TRANSITION"
+   },
+   {
+    "name": "TRANSITION - HEAVY V1 @shadx2",
+    "source": "TRANSITION"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "Splice",
+    "count": 4
+   },
+   {
+    "name": "SNARE",
+    "count": 4
+   },
+   {
+    "name": "VOX",
+    "count": 4
+   },
+   {
+    "name": "PERC",
+    "count": 4
+   },
+   {
+    "name": "FX",
+    "count": 3
+   },
+   {
+    "name": "OH",
+    "count": 2
+   },
+   {
+    "name": "IMPACT",
+    "count": 2
+   },
+   {
+    "name": "percs~foley",
+    "count": 2
+   },
+   {
+    "name": "TRANSITION",
+    "count": 2
+   },
+   {
+    "name": "808",
+    "count": 1
+   },
+   {
+    "name": "Crashes",
+    "count": 1
+   },
+   {
+    "name": "KICK",
+    "count": 1
+   },
+   {
+    "name": "CLAP",
+    "count": 1
+   },
+   {
+    "name": "percs",
+    "count": 1
+   },
+   {
+    "name": "Other Voxs",
+    "count": 1
+   }
+  ],
+  "patterns": 7,
+  "arrangement_bars": null,
+  "playlist_items": 0,
+  "inserts_named": 22,
+  "inserts_total": 25,
+  "file_kb": 747
+ },
+ "Relaxing Thursday": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "ZENOLOGY",
+    "count": 4,
+    "kind": "VST"
+   },
+   {
+    "name": "BBC Symphony Orchestra",
+    "count": 2,
+    "kind": "VST"
+   },
+   {
+    "name": "Lounge Lizard EP-4",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Splice Sounds",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Splice INSTRUMENT",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Serum 2",
+    "count": 1,
+    "kind": "VST"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Edison",
+    "count": 1,
+    "kind": "Native"
+   },
+   {
+    "name": "Emphasizer",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 0,
+  "samples": [
+   {
+    "name": "hat - eta",
+    "source": "Hats"
+   },
+   {
+    "name": "open hat - dall",
+    "source": "Hats"
+   },
+   {
+    "name": "kick - bubblegum",
+    "source": "Kicks"
+   },
+   {
+    "name": "snap - jersey",
+    "source": "Claps"
+   },
+   {
+    "name": "snare - groovyroom",
+    "source": "Snares"
+   },
+   {
+    "name": "snare - newjeans",
+    "source": "Snares"
+   },
+   {
+    "name": "ride",
+    "source": "Percs"
+   },
+   {
+    "name": "perc - nwjns 3",
+    "source": "Percs"
+   },
+   {
+    "name": "kick - hype boy",
+    "source": "Kicks"
+   },
+   {
+    "name": "TWS (투어스) '너의 모든 가능성이 되어 줄게 (All The Possibilities)' Acapella",
+    "source": "Desktop"
+   },
+   {
+    "name": "MA_EB_Hat_Closed_One_Shot_Moovin_Soft",
+    "source": "Splice"
+   },
+   {
+    "name": "MA_EB_Hat_Open_One_Shot_Love",
+    "source": "Splice"
+   },
+   {
+    "name": "MA_EB_Kick_One_Shot_JumpUp",
+    "source": "Splice"
+   },
+   {
+    "name": "MA_EB_Snare_One_Shot_JumpUp",
+    "source": "Splice"
+   },
+   {
+    "name": "MA_EB_Rim_One_Shot_Moovin",
+    "source": "Splice"
+   },
+   {
+    "name": "MA_EB_Cymbal_Crash_One_Shot_Tricky",
+    "source": "Splice"
+   },
+   {
+    "name": "reverb cowbell perc",
+    "source": "Percs"
+   },
+   {
+    "name": "SS_FDS2_112_guitar_electric_sledge_muted_funk_riff_Dmin_121bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "DSC_FTC_100_percussion_loop_shaker_banana_full_121bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "bass slide 1",
+    "source": "Bass"
+   },
+   {
+    "name": "tape stop 2",
+    "source": "FX"
+   },
+   {
+    "name": "JAFUNK_120_brass_section_jazzy_Amin",
+    "source": "Splice"
+   },
+   {
+    "name": "DS_DPH_brass_ensemble_stab_gone_D_5steps",
+    "source": "Splice"
+   },
+   {
+    "name": "JAFUNK_120_brass_section_swell_aggressive_E_3steps",
+    "source": "Splice"
+   },
+   {
+    "name": "JAFUNK_118_brass_section_energy_Bmin_121bpm_-4steps",
+    "source": "Splice"
+   },
+   {
+    "name": "fhg2_prc127_mixedperc09_121bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "OLIVER_percussion_one_shot_vibra_slap",
+    "source": "Splice"
+   },
+   {
+    "name": "SS_LFDH_116_vocal_hook_sugar_classic_disco_Emin_121bpm_3steps",
+    "source": "Splice"
+   },
+   {
+    "name": "T_LFTC1_115_vocal_loop_brassedoff_121bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "DS_LENNO_105_vocal_harmony_female_get_me_chorus_double_wet_Bmin_121bpm_-4steps",
+    "source": "Splice"
+   },
+   {
+    "name": "riser 3",
+    "source": "Crashes + Risers"
+   },
+   {
+    "name": "DS_DPH_125_vocal_hook_female_so_good_verse_stack_wet_Fmin_121bpm_2steps",
+    "source": "Splice"
+   },
+   {
+    "name": "DS_LENNO_105_vocal_hook_female_get_me_verse_lead_wet_Bmin_121bpm_-4steps",
+    "source": "Splice"
+   },
+   {
+    "name": "AU_FP_100_vocal_shout_one_shot_pepper",
+    "source": "Splice"
+   },
+   {
+    "name": "PDB_vocal_cmon",
+    "source": "Splice"
+   },
+   {
+    "name": "nr_hit_breathe",
+    "source": "Splice"
+   },
+   {
+    "name": "DS_LENNO_105_vocal_harmony_female_get_me_chorus_double_wet_Bmin_121bpm_-4steps #2",
+    "source": "Splice"
+   },
+   {
+    "name": "DS_LENNO_105_vocal_harmony_female_get_me_chorus_double_wet_Bmin_121bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "DS_LENNO_105_vocal_hook_female_get_me_verse_lead_wet_Bmin_121bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "OLIVER_fx_party_scene",
+    "source": "Splice"
+   },
+   {
+    "name": "TS_TROPICOOL_vocal_one_shot_male_drop_the_beat_3",
+    "source": "Splice"
+   },
+   {
+    "name": "DS_LENNO_126_melodic_stack_lift_Emin_121bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "JAFUNK_120_brass_section_jazzy_Amin #2",
+    "source": "Splice"
+   },
+   {
+    "name": "UN_CMOS_90_vocoder_chords_loop_do_do_do_F#min_121bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "fall 4",
+    "source": "Crashes + Risers"
+   },
+   {
+    "name": "OLIVER_fx_party_scene (consolidated)",
+    "source": "Audio"
+   },
+   {
+    "name": "Track 2 (consolidated)",
+    "source": "Audio"
+   },
+   {
+    "name": "Track 4 (consolidated)",
+    "source": "Audio"
+   },
+   {
+    "name": "Track 6 (consolidated)",
+    "source": "Audio"
+   },
+   {
+    "name": "Track 8 (consolidated)",
+    "source": "Audio"
+   },
+   {
+    "name": "Track 10 (consolidated)",
+    "source": "Audio"
+   },
+   {
+    "name": "Track 12 (consolidated)",
+    "source": "Audio"
+   },
+   {
+    "name": "Track 14 (consolidated)",
+    "source": "Audio"
+   },
+   {
+    "name": "Track 16 (consolidated)",
+    "source": "Audio"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "Splice",
+    "count": 30
+   },
+   {
+    "name": "Audio",
+    "count": 9
+   },
+   {
+    "name": "Percs",
+    "count": 3
+   },
+   {
+    "name": "Hats",
+    "count": 2
+   },
+   {
+    "name": "Kicks",
+    "count": 2
+   },
+   {
+    "name": "Snares",
+    "count": 2
+   },
+   {
+    "name": "Crashes + Risers",
+    "count": 2
+   },
+   {
+    "name": "Claps",
+    "count": 1
+   },
+   {
+    "name": "Desktop",
+    "count": 1
+   },
+   {
+    "name": "Bass",
+    "count": 1
+   },
+   {
+    "name": "FX",
+    "count": 1
+   }
+  ],
+  "patterns": 14,
+  "arrangement_bars": 88.1,
+  "playlist_items": 51,
+  "inserts_named": 18,
+  "inserts_total": 21,
+  "file_kb": 6386.3
+ },
+ "idk where this is going": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "Serum 2",
+    "count": 10,
+    "kind": "VST"
+   },
+   {
+    "name": "Diva",
+    "count": 3,
+    "kind": "VST"
+   },
+   {
+    "name": "ZENOLOGY",
+    "count": 3,
+    "kind": "VST"
+   },
+   {
+    "name": "Splice Sounds",
+    "count": 1,
+    "kind": "VST"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Fruity Soft Clipper",
+    "count": 1,
+    "kind": "Native"
+   },
+   {
+    "name": "Endless Smile",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Emphasizer",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 2,
+  "samples": [
+   {
+    "name": "doja cat - like that (filtered acapella)",
+    "source": "Desktop"
+   },
+   {
+    "name": "KICK - SATURATED @shadx2",
+    "source": "KICK"
+   },
+   {
+    "name": "[clap] ferrari",
+    "source": "claps"
+   },
+   {
+    "name": "[snare] appraisal",
+    "source": "snares"
+   },
+   {
+    "name": "[snare] go mode",
+    "source": "snares"
+   },
+   {
+    "name": "[snare] eye2eye",
+    "source": "snares"
+   },
+   {
+    "name": "[snare] haiku",
+    "source": "snares"
+   },
+   {
+    "name": "[snare] vigilante",
+    "source": "snares"
+   },
+   {
+    "name": "(kick) ivy",
+    "source": "kicks"
+   },
+   {
+    "name": "(clap) my fav lol",
+    "source": "claps "
+   },
+   {
+    "name": "(snare) shake",
+    "source": "snares"
+   },
+   {
+    "name": "(snare) pond",
+    "source": "snares"
+   },
+   {
+    "name": "HH - Relapse [Ginseng]",
+    "source": "HH"
+   },
+   {
+    "name": "PLUCK - PROTON @shadx2",
+    "source": "1shots"
+   },
+   {
+    "name": "PULSATING - UNICORN @shadx2",
+    "source": "1shots"
+   },
+   {
+    "name": "[808] liveleak",
+    "source": "808s"
+   },
+   {
+    "name": "TRANSITION - WISP [134] @shadx2",
+    "source": "FX"
+   },
+   {
+    "name": "IMPACT - SPIKE @shadx2",
+    "source": "FX"
+   },
+   {
+    "name": "TRANSITION - RETINA [138] @shadx2",
+    "source": "FX"
+   },
+   {
+    "name": "IMPACT - KORE @shadx2",
+    "source": "FX"
+   },
+   {
+    "name": "[snap] misanthrope",
+    "source": "claps"
+   },
+   {
+    "name": "med5",
+    "source": "med"
+   },
+   {
+    "name": "fall 4",
+    "source": "Crashes + Risers"
+   },
+   {
+    "name": "tape stop 2",
+    "source": "FX"
+   },
+   {
+    "name": "FX - HD Resolution [Ginseng]",
+    "source": "FX"
+   },
+   {
+    "name": "[vox] doh",
+    "source": "vox"
+   },
+   {
+    "name": "VOX - BREATH @shadx2",
+    "source": "VOX"
+   },
+   {
+    "name": "[vox] rh go",
+    "source": "vox"
+   },
+   {
+    "name": "[vox] ohh",
+    "source": "vox"
+   },
+   {
+    "name": "[vox] rh woo",
+    "source": "vox"
+   },
+   {
+    "name": "[vox] confused",
+    "source": "vox"
+   },
+   {
+    "name": "applesauce riser",
+    "source": "misc~fx"
+   },
+   {
+    "name": "laser impact",
+    "source": "misc~fx"
+   },
+   {
+    "name": "(perc) keys",
+    "source": "percs~foley"
+   },
+   {
+    "name": "(perc) brush",
+    "source": "percs~foley"
+   },
+   {
+    "name": "(perc) laser 1",
+    "source": "percs~foley"
+   },
+   {
+    "name": "(perc) record",
+    "source": "percs~foley"
+   },
+   {
+    "name": "(perc) omg",
+    "source": "percs~foley"
+   },
+   {
+    "name": "(perc) shaker",
+    "source": "percs~foley"
+   },
+   {
+    "name": "(perc) trash",
+    "source": "percs~foley"
+   },
+   {
+    "name": "(perc) sorry",
+    "source": "percs~foley"
+   },
+   {
+    "name": "doja cat - like that (filtered acapella) (consolidated)",
+    "source": "Audio"
+   },
+   {
+    "name": "IMPACT - DISC SIREN @shadx2",
+    "source": "FX"
+   },
+   {
+    "name": "IMPACT - PAPARAZZO @shadx2",
+    "source": "FX"
+   },
+   {
+    "name": "VOX - AYE @shadx2",
+    "source": "VOX"
+   },
+   {
+    "name": "turntable",
+    "source": "Percs"
+   },
+   {
+    "name": "BWB FX",
+    "source": "FX"
+   },
+   {
+    "name": "doja cat - like that (filtered acapella) (consolidated) #2",
+    "source": "Audio"
+   },
+   {
+    "name": "favorite",
+    "source": "claps and snares"
+   },
+   {
+    "name": "side snare",
+    "source": "claps and snares"
+   },
+   {
+    "name": "laser pew",
+    "source": "delightearly"
+   },
+   {
+    "name": "youonlyneedthiskick",
+    "source": "kicks"
+   },
+   {
+    "name": "thisrimbouncy!!!",
+    "source": "rims"
+   },
+   {
+    "name": "rattlesnake",
+    "source": "FX"
+   },
+   {
+    "name": "chimes !!!!!!!!!!!",
+    "source": "FX"
+   },
+   {
+    "name": "armystomp",
+    "source": "FX"
+   },
+   {
+    "name": "whistle",
+    "source": "FX"
+   },
+   {
+    "name": "claplayer",
+    "source": "FX"
+   },
+   {
+    "name": "shake",
+    "source": "percs"
+   },
+   {
+    "name": "animegirl3favorite",
+    "source": "VOX"
+   },
+   {
+    "name": "secondbestsnare",
+    "source": "claps and snares"
+   },
+   {
+    "name": "LEAD - FLEX @shadx2",
+    "source": "1shots"
+   },
+   {
+    "name": "KICK - Shadow [Ginseng]",
+    "source": "KICK"
+   },
+   {
+    "name": "CLAP - Cemetary Drive [Ginseng]",
+    "source": "CLAP"
+   },
+   {
+    "name": "SNARE - Electric Guitar [Ginseng]",
+    "source": "SNARE"
+   },
+   {
+    "name": "SNARE - Blackout [Ginseng]",
+    "source": "SNARE"
+   },
+   {
+    "name": "CH - cool ting I like vox",
+    "source": "Other Voxs"
+   },
+   {
+    "name": "CH - attentive crash",
+    "source": "Crashes"
+   },
+   {
+    "name": "CH - digital down lazers fx",
+    "source": "FX"
+   },
+   {
+    "name": "CH - funny hihat roll perc",
+    "source": "Percussion"
+   },
+   {
+    "name": "CH - astral triangle perc",
+    "source": "Percussion"
+   },
+   {
+    "name": "bounce",
+    "source": "VOX"
+   },
+   {
+    "name": "triangle",
+    "source": "FX"
+   },
+   {
+    "name": "manly",
+    "source": "VOX"
+   },
+   {
+    "name": "doja cat - like that (filtered acapella) (consolidated) #3",
+    "source": "Audio"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "FX",
+    "count": 16
+   },
+   {
+    "name": "percs~foley",
+    "count": 8
+   },
+   {
+    "name": "snares",
+    "count": 7
+   },
+   {
+    "name": "vox",
+    "count": 5
+   },
+   {
+    "name": "VOX",
+    "count": 5
+   },
+   {
+    "name": "1shots",
+    "count": 3
+   },
+   {
+    "name": "Audio",
+    "count": 3
+   },
+   {
+    "name": "claps and snares",
+    "count": 3
+   },
+   {
+    "name": "KICK",
+    "count": 2
+   },
+   {
+    "name": "claps",
+    "count": 2
+   },
+   {
+    "name": "kicks",
+    "count": 2
+   },
+   {
+    "name": "misc~fx",
+    "count": 2
+   },
+   {
+    "name": "SNARE",
+    "count": 2
+   },
+   {
+    "name": "Percussion",
+    "count": 2
+   },
+   {
+    "name": "Desktop",
+    "count": 1
+   },
+   {
+    "name": "claps ",
+    "count": 1
+   },
+   {
+    "name": "HH",
+    "count": 1
+   },
+   {
+    "name": "808s",
+    "count": 1
+   },
+   {
+    "name": "med",
+    "count": 1
+   },
+   {
+    "name": "Crashes + Risers",
+    "count": 1
+   },
+   {
+    "name": "Percs",
+    "count": 1
+   },
+   {
+    "name": "delightearly",
+    "count": 1
+   },
+   {
+    "name": "rims",
+    "count": 1
+   },
+   {
+    "name": "percs",
+    "count": 1
+   },
+   {
+    "name": "CLAP",
+    "count": 1
+   },
+   {
+    "name": "Other Voxs",
+    "count": 1
+   },
+   {
+    "name": "Crashes",
+    "count": 1
+   }
+  ],
+  "patterns": 26,
+  "arrangement_bars": 64,
+  "playlist_items": 371,
+  "inserts_named": 40,
+  "inserts_total": 43,
+  "file_kb": 1119.2
+ },
+ "Walk Through GGP": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "ZENOLOGY",
+    "count": 6,
+    "kind": "VST"
+   },
+   {
+    "name": "Splice INSTRUMENT",
+    "count": 2,
+    "kind": "VST"
+   },
+   {
+    "name": "BBC Symphony Orchestra",
+    "count": 2,
+    "kind": "VST"
+   },
+   {
+    "name": "Splice Sounds",
+    "count": 1,
+    "kind": "VST"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Emphasizer",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 0,
+  "samples": [
+   {
+    "name": "VT FLOOR HAT",
+    "source": "venezuela trains"
+   },
+   {
+    "name": "EAPU HAT",
+    "source": "edgar allan poe'd up"
+   },
+   {
+    "name": "FEEL KICK LIVE",
+    "source": "feel good"
+   },
+   {
+    "name": "MAY SNARE",
+    "source": "may"
+   },
+   {
+    "name": "RELAX OPEN HAT",
+    "source": "relax"
+   },
+   {
+    "name": "CARESS 90S SNARE",
+    "source": "caress"
+   },
+   {
+    "name": "BABY LIVE SNARE",
+    "source": "baby"
+   },
+   {
+    "name": "SO_SH_96_top_shakers_python_148bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "DBM_LV_83_Strings_Loop_Ice_Emin_148bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "MAY RECORD SCRATCH",
+    "source": "may"
+   },
+   {
+    "name": "Walk Through GGP",
+    "source": "My songs"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "may",
+    "count": 2
+   },
+   {
+    "name": "Splice",
+    "count": 2
+   },
+   {
+    "name": "venezuela trains",
+    "count": 1
+   },
+   {
+    "name": "edgar allan poe'd up",
+    "count": 1
+   },
+   {
+    "name": "feel good",
+    "count": 1
+   },
+   {
+    "name": "relax",
+    "count": 1
+   },
+   {
+    "name": "caress",
+    "count": 1
+   },
+   {
+    "name": "baby",
+    "count": 1
+   },
+   {
+    "name": "My songs",
+    "count": 1
+   }
+  ],
+  "patterns": 17,
+  "arrangement_bars": 121,
+  "playlist_items": 280,
+  "inserts_named": 17,
+  "inserts_total": 20,
+  "file_kb": 1160.7
+ },
+ "Post Monterey Trip": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "Addictive Keys",
+    "count": 2,
+    "kind": "VST"
+   },
+   {
+    "name": "Diva",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Splice INSTRUMENT",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "BBC Symphony Orchestra",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Addictive Drums 2",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Splice Sounds",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "ZENOLOGY",
+    "count": 1,
+    "kind": "VST"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Fruity Soft Clipper",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 0,
+  "samples": [
+   {
+    "name": "You_re Sorry-A major-80bpm-440hz",
+    "source": "Downloads"
+   },
+   {
+    "name": "- Ocean, Soft Waves, Splashing, Rocks, Sunset Ambience, Low Tide, Penang, Malaysia",
+    "source": "delightearly"
+   },
+   {
+    "name": "shaking shaker fx",
+    "source": "Fx's"
+   },
+   {
+    "name": "JJP_90SS_136_vocal_harmonies_shogi_C#m_80bpm_-4steps",
+    "source": "Splice"
+   },
+   {
+    "name": "SLS_OS_electric_guitar_fx_bubbles",
+    "source": "Splice"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "Splice",
+    "count": 2
+   },
+   {
+    "name": "Downloads",
+    "count": 1
+   },
+   {
+    "name": "delightearly",
+    "count": 1
+   },
+   {
+    "name": "Fx's",
+    "count": 1
+   }
+  ],
+  "patterns": 4,
+  "arrangement_bars": 48.2,
+  "playlist_items": 6,
+  "inserts_named": 10,
+  "inserts_total": 18,
+  "file_kb": 464.6
+ },
+ "i dont know what food to get": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "Serum 2",
+    "count": 4,
+    "kind": "VST"
+   },
+   {
+    "name": "ZENOLOGY",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Diva",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "Splice Sounds",
+    "count": 1,
+    "kind": "VST"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Fruity Soft Clipper",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 0,
+  "samples": [
+   {
+    "name": "! SCAPES - BIRDS @shadx2",
+    "source": "1shots"
+   },
+   {
+    "name": "JT_P3_101_vocals_delay_loop_bounce_Em_140bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "youonlyneedthiskick",
+    "source": "kicks"
+   },
+   {
+    "name": "cute clap",
+    "source": "claps and snares"
+   },
+   {
+    "name": "favorite",
+    "source": "claps and snares"
+   },
+   {
+    "name": "side clap",
+    "source": "claps and snares"
+   },
+   {
+    "name": "(open hat) line",
+    "source": "open hats"
+   },
+   {
+    "name": "sparklez !!!!!!!!!",
+    "source": "FX"
+   },
+   {
+    "name": "verycute",
+    "source": "FX"
+   },
+   {
+    "name": "riser 3",
+    "source": "Crashes + Risers"
+   },
+   {
+    "name": "fall 4",
+    "source": "Crashes + Risers"
+   },
+   {
+    "name": "claplayer",
+    "source": "FX"
+   },
+   {
+    "name": "whistle",
+    "source": "FX"
+   },
+   {
+    "name": "triangle",
+    "source": "FX"
+   },
+   {
+    "name": "adorable little shaker",
+    "source": "percs"
+   },
+   {
+    "name": "bongofillalways",
+    "source": "percs"
+   },
+   {
+    "name": "bounce 808",
+    "source": "808s and bass"
+   },
+   {
+    "name": "MO_JUK_perc_whip_crack",
+    "source": "Splice"
+   },
+   {
+    "name": "laser impact",
+    "source": "misc~fx"
+   },
+   {
+    "name": "(perc) laser 1",
+    "source": "percs~foley"
+   },
+   {
+    "name": "SO_TL_130_vocals_champagne_soul_lead_Dmin_140bpm",
+    "source": "Splice"
+   },
+   {
+    "name": "! SNARE - XAN @shadx2",
+    "source": "SNARE"
+   },
+   {
+    "name": "TRANSITION - REV UP @shadx2",
+    "source": "TRANSITION"
+   },
+   {
+    "name": "FX - VINYL SCRATCH @shadx2",
+    "source": "FX"
+   },
+   {
+    "name": "ADORABLE !!!!!!!!!",
+    "source": "FX"
+   },
+   {
+    "name": "IMPACT - CRASH V3 @shadx2",
+    "source": "IMPACT"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "FX",
+    "count": 7
+   },
+   {
+    "name": "Splice",
+    "count": 3
+   },
+   {
+    "name": "claps and snares",
+    "count": 3
+   },
+   {
+    "name": "Crashes + Risers",
+    "count": 2
+   },
+   {
+    "name": "percs",
+    "count": 2
+   },
+   {
+    "name": "1shots",
+    "count": 1
+   },
+   {
+    "name": "kicks",
+    "count": 1
+   },
+   {
+    "name": "open hats",
+    "count": 1
+   },
+   {
+    "name": "808s and bass",
+    "count": 1
+   },
+   {
+    "name": "misc~fx",
+    "count": 1
+   },
+   {
+    "name": "percs~foley",
+    "count": 1
+   },
+   {
+    "name": "SNARE",
+    "count": 1
+   },
+   {
+    "name": "TRANSITION",
+    "count": 1
+   },
+   {
+    "name": "IMPACT",
+    "count": 1
+   }
+  ],
+  "patterns": 8,
+  "arrangement_bars": null,
+  "playlist_items": 0,
+  "inserts_named": 17,
+  "inserts_total": 20,
+  "file_kb": 458.4
+ },
+ "Waiting for the laundry": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "Splice INSTRUMENT",
+    "count": 2,
+    "kind": "VST"
+   },
+   {
+    "name": "ZENOLOGY",
+    "count": 2,
+    "kind": "VST"
+   },
+   {
+    "name": "SKY Keys",
+    "count": 1,
+    "kind": "VST"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Emphasizer",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 0,
+  "samples": [
+   {
+    "name": "540 hat",
+    "source": "Hat"
+   },
+   {
+    "name": "abisal kick",
+    "source": "Kick"
+   },
+   {
+    "name": "slick snare",
+    "source": "Snares & Claps"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "Hat",
+    "count": 1
+   },
+   {
+    "name": "Kick",
+    "count": 1
+   },
+   {
+    "name": "Snares & Claps",
+    "count": 1
+   }
+  ],
+  "patterns": 8,
+  "arrangement_bars": 56,
+  "playlist_items": 21,
+  "inserts_named": 0,
+  "inserts_total": 18,
+  "file_kb": 412.7
+ },
+ "Rotting in bed": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "Serum 2",
+    "count": 5,
+    "kind": "VST"
+   },
+   {
+    "name": "Addictive Keys",
+    "count": 1,
+    "kind": "VST"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Fruity Soft Clipper",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 1,
+  "samples": [
+   {
+    "name": "Attracted to You-Bb major-114bpm-432hz",
+    "source": "Desktop"
+   },
+   {
+    "name": "CLAP - Dead angel radio [Ginseng]",
+    "source": "CLAP"
+   },
+   {
+    "name": "OH - Gloom [Ginseng]",
+    "source": "OH"
+   },
+   {
+    "name": "KICK - BmX [Ginseng]",
+    "source": "KICK"
+   },
+   {
+    "name": "FX - Tokyo VHS [Ginseng]",
+    "source": "FX"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "Desktop",
+    "count": 1
+   },
+   {
+    "name": "CLAP",
+    "count": 1
+   },
+   {
+    "name": "OH",
+    "count": 1
+   },
+   {
+    "name": "KICK",
+    "count": 1
+   },
+   {
+    "name": "FX",
+    "count": 1
+   }
+  ],
+  "patterns": 2,
+  "arrangement_bars": 7.5,
+  "playlist_items": 12,
+  "inserts_named": 10,
+  "inserts_total": 18,
+  "file_kb": 237.9
+ },
+ "Beat at the ARC": {
+  "readable": true,
+  "partial": true,
+  "fl_version": "25.2.4.4960",
+  "instruments": [
+   {
+    "name": "Splice INSTRUMENT",
+    "count": 1,
+    "kind": "VST"
+   },
+   {
+    "name": "FLEX Bass",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "effects": [
+   {
+    "name": "Emphasizer",
+    "count": 1,
+    "kind": "Native"
+   }
+  ],
+  "inserts_used": 1,
+  "channels_other": 0,
+  "samples": [
+   {
+    "name": "808 Clap",
+    "source": "Dance"
+   },
+   {
+    "name": "808 HiHat",
+    "source": "Dance"
+   },
+   {
+    "name": "808 Snare",
+    "source": "Dance"
+   }
+  ],
+  "sample_sources": [
+   {
+    "name": "Dance",
+    "count": 3
+   }
+  ],
+  "patterns": 1,
+  "arrangement_bars": null,
+  "playlist_items": 0,
+  "inserts_named": 0,
+  "inserts_total": 18,
+  "file_kb": 73.7
+ }
+}
