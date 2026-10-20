@@ -83,6 +83,8 @@ function el() {
 
 function ensureAnalyser() {
   if (ctx || !audio) return
+  // iOS Safari mutes Web Audio when the ringer switch is off unless the page declares media playback
+  try { const a = (navigator as unknown as { audioSession?: { type: string } }).audioSession; if (a) a.type = 'playback' } catch { /* not supported */ }
   ctx = new AudioContext()
   const src = ctx.createMediaElementSource(audio)
   analyser = ctx.createAnalyser()
