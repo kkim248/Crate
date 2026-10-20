@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Archive, Check, FolderOpen, Heart, MagnifyingGlass, Warning, X } from '@phosphor-icons/react'
 import { reveal, type Details, type Flag, type Project, type Used } from './data'
 import { Pebble } from './Brand'
+import { useSheetDrag } from './sheetDrag'
 
 type Tab = 'overview' | 'sound' | 'samples'
 const plural = (c: number, w: string) => `${c} ${w}${c === 1 ? '' : 's'}`
@@ -44,6 +45,7 @@ export function Inspector({ p, details, projects, flag, onClose }: { p: Project;
   const [tab, setTab] = useState<Tab>('overview')
   const [filter, setFilter] = useState('')
   const opener = useRef<HTMLElement | null>(null)
+  useSheetDrag(dialog, onClose)
 
   useEffect(() => {
     opener.current = document.activeElement as HTMLElement
@@ -123,6 +125,7 @@ export function Inspector({ p, details, projects, flag, onClose }: { p: Project;
   return (
     <div className="scrim" onMouseDown={(e) => { if (e.target === e.currentTarget) onClose() }}>
       <div className="inspector" role="dialog" aria-modal="true" aria-labelledby="insp-title" tabIndex={-1} ref={dialog}>
+        <div className="sheethandle" aria-hidden><span className="sheetgrab" /></div>
         <header className="ihead">
           <div className="ititle">
             <div className="dhead">

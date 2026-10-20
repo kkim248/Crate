@@ -403,7 +403,7 @@ input[type='range']::-moz-range-thumb { width: 10px; height: 10px; border-radius
 .toast:empty { display: none; }
 
 /* ---------- mobile-only pieces (hidden on desktop) ---------- */
-.mhead, .quick, .filterbtn, .sheetgrab, .sheetclose, .sheettitle { display: none; }
+.mhead, .quick, .filterbtn, .sheetgrab, .sheethandle, .sheetclose, .sheettitle { display: none; }
 .lstick { display: contents; }
 .sheetscrim { position: fixed; inset: 0; z-index: calc(var(--z-drawer) - 1); background: rgb(var(--ink-rgb) / .36); animation: fade .2s var(--ease); }
 .fdot { font-family: var(--mono); }
@@ -467,18 +467,19 @@ input[type='range']::-moz-range-thumb { width: 10px; height: 10px; border-radius
 
   /* bottom sheets: filters and project details */
   .sheetscrim { z-index: calc(var(--z-drawer) - 1); }
-  .filters.sheet, .detail { position: fixed; top: auto; left: 0; right: 0; bottom: 0; width: auto; z-index: var(--z-drawer); max-height: 88dvh; border-radius: var(--r-xl) var(--r-xl) 0 0; box-shadow: var(--sh-3); transform: translateY(105%); visibility: hidden; transition: transform .35s var(--ease), visibility 0s .35s; overflow-y: auto; }
+  .filters.sheet, .detail { position: fixed; top: auto; left: 0; right: 0; bottom: 0; width: auto; z-index: var(--z-drawer); max-height: 88dvh; overscroll-behavior: contain; border-radius: var(--r-xl) var(--r-xl) 0 0; box-shadow: var(--sh-3); transform: translateY(105%); visibility: hidden; transition: transform .35s var(--ease), visibility 0s .35s; overflow-y: auto; }
   .filters.sheet { padding: var(--sp-7) var(--sp-4) calc(var(--sp-4) + env(safe-area-inset-bottom)); }
   .detail { padding: var(--sp-7) var(--sp-4) calc(var(--sp-5) + env(safe-area-inset-bottom)); }
   .filters.sheet.open, .detail.open { transform: none; visibility: visible; transition: transform .35s var(--ease); }
   .filters .phead { display: none; }
   .filters .btn-primary { display: none; }   /* the Listen tab already does this on a phone */
   .sheettitle { display: block; padding: 0 var(--sp-3) var(--sp-2); font-size: var(--fs-h2); font-weight: 700; letter-spacing: var(--ls-head); }
-  .sheetgrab, .detail::before { content: ''; display: block; position: absolute; top: var(--sp-2); left: 50%; transform: translateX(-50%); width: 36px; height: 5px; border-radius: var(--r-full); background: var(--tick); }
+  .sheethandle { display: block; position: absolute; top: 0; left: 25%; right: 25%; height: 44px; touch-action: none; cursor: grab; z-index: 3; }
+  .sheetgrab { display: block; position: absolute; top: var(--sp-2); left: 50%; transform: translateX(-50%); width: 36px; height: 5px; border-radius: var(--r-full); background: var(--tick); }
   .sheetclose { display: grid; place-items: center; position: absolute; top: var(--sp-3); right: var(--sp-3); width: var(--h-md); height: var(--h-md); border-radius: 50%; background: var(--card); box-shadow: var(--sh-1); }
   .dclose { top: var(--sp-3); right: var(--sp-3); }
   .triage { margin-top: var(--sp-3); }
-  .menu.left { position: fixed; top: auto; left: var(--sp-3); right: var(--sp-3); bottom: calc(var(--sp-3) + env(safe-area-inset-bottom)); width: auto; max-height: 72dvh; overflow-y: auto; z-index: calc(var(--z-drawer) + 1); box-shadow: var(--sh-3); transform-origin: bottom center; }
+  .menu.left { position: fixed; top: auto; left: var(--sp-3); right: var(--sp-3); bottom: calc(var(--sp-3) + env(safe-area-inset-bottom)); width: auto; max-height: 72dvh; overflow-y: auto; overscroll-behavior: contain; padding-top: var(--sp-6); z-index: calc(var(--z-drawer) + 1); box-shadow: var(--sh-3); transform-origin: bottom center; }
   .guide .menu { width: auto; }
 
   /* mini player floats above the tab bar */
@@ -511,7 +512,7 @@ input[type='range']::-moz-range-thumb { width: 10px; height: 10px; border-radius
   .bento { display: flex; flex-direction: column; overflow: visible; }
   .tile { padding: var(--sp-5); min-height: 0; }
   .tile .num { font-size: clamp(64px, 20vw, 104px); }
-  .hist { min-height: 140px; }
+  .hist { flex: none; height: 160px; min-height: 0; }   /* a definite height, so the percentage bar heights resolve */
 
   /* details popup becomes a tall sheet */
   .scrim { padding: 0; align-items: end; }

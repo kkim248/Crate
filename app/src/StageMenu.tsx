@@ -3,6 +3,7 @@ import { CaretDown, Check, Info } from '@phosphor-icons/react'
 import { STAGES, hideToast, setStageOverride, showToast, type Project, type Stage } from './data'
 import { Pebble } from './Brand'
 import { STAGE_RULES } from './stage'
+import { attachSheetDrag } from './sheetDrag'
 
 function useMenu() {
   const [open, setOpen] = useState(false)
@@ -13,6 +14,11 @@ function useMenu() {
     document.addEventListener('mousedown', away)
     wrap.current?.querySelector<HTMLElement>('[aria-checked="true"], .mi')?.focus()
     return () => document.removeEventListener('mousedown', away)
+  }, [open])
+  // on a phone the menu is a bottom sheet, so it can be swiped away
+  useEffect(() => {
+    const menu = open ? wrap.current?.querySelector<HTMLElement>('.menu.left') : null
+    return menu ? attachSheetDrag(menu, () => setOpen(false)) : undefined
   }, [open])
   const key = (e: React.KeyboardEvent) => {
     const items = [...(wrap.current?.querySelectorAll<HTMLElement>('[role="menuitemradio"]') ?? [])]
@@ -41,6 +47,7 @@ export function StageMenu({ p }: { p: Project }) {
       {p.overridden && <span className="setby">Set by you</span>}
       {open && (
         <div className="menu left" role="menu" aria-label="Stage">
+          <div className="sheethandle" aria-hidden><span className="sheetgrab" /></div>
           <p className="mh">Why {p.detected}?</p>
           <p className="why">{p.reasons?.join(' ')}</p>
           <p className="mh">Set the stage yourself</p>
@@ -68,6 +75,7 @@ export function StageGuide() {
       </button>
       {open && (
         <div className="menu left guidebox" role="dialog" aria-label="How stages are decided">
+          <div className="sheethandle" aria-hidden><span className="sheetgrab" /></div>
           <p className="mh">How stages are decided</p>
           <ul>
             {STAGE_RULES.map((r) => <li key={r.stage}><Pebble stage={r.stage} /><span><b>{r.stage}</b>{r.rule}</span></li>)}

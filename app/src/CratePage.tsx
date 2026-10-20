@@ -4,6 +4,7 @@ import {
 } from '@phosphor-icons/react'
 import { STAGES, hideToast, reveal, setFlag, showToast, type Crate, type Details, type Flag, type Project } from './data'
 import { Inspector } from './Inspector'
+import { useSheetDrag } from './sheetDrag'
 import { StageGuide, StageMenu } from './StageMenu'
 import { Pebble, STONE } from './Brand'
 import { MiniRing } from './Ring'
@@ -154,6 +155,8 @@ export function CratePage({ crate, flags, details, onListen, focus }: { crate: C
     m.addEventListener('change', f)
     return () => m.removeEventListener('change', f)
   }, [])
+  const filtersRef = useRef<HTMLElement>(null)
+  const detailRef = useRef<HTMLElement>(null)
   const [mobile, setMobile] = useState(() => matchMedia('(max-width: 900px)').matches)
   const [filtersOpen, setFiltersOpen] = useState(false)
   useEffect(() => {
@@ -256,6 +259,8 @@ export function CratePage({ crate, flags, details, onListen, focus }: { crate: C
     if (stage !== 'any' && !crate.projects.some((p) => p.stage === stage)) setStage('any')
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [flags, crate, triage, stage])
+  useSheetDrag(filtersRef, () => setFiltersOpen(false))
+  useSheetDrag(detailRef, () => setDrawer(false))
   const activeCount = (heard !== 'all' ? 1 : 0) + (stage !== 'any' ? 1 : 0) + (triage !== 'active' ? 1 : 0)
   useEffect(() => {
     if (!filtersOpen && !drawer) return
@@ -269,8 +274,8 @@ export function CratePage({ crate, flags, details, onListen, focus }: { crate: C
   return (
     <div className="lib">
       {(filtersOpen || (drawer && narrow)) && <div className="sheetscrim" onClick={() => { setFiltersOpen(false); setDrawer(false) }} aria-hidden />}
-      <aside className={`panel filters sheet${filtersOpen ? ' open' : ''}`} aria-label="Filters" inert={mobile && !filtersOpen ? true : undefined}>
-        <span className="sheetgrab" aria-hidden />
+      <aside ref={filtersRef} className={`panel filters sheet${filtersOpen ? ' open' : ''}`} aria-label="Filters" inert={mobile && !filtersOpen ? true : undefined}>
+        <div className="sheethandle" aria-hidden><span className="sheetgrab" /></div>
         <button className="sheetclose" onClick={() => setFiltersOpen(false)} aria-label="Close filters"><X size={20} /></button>
         <h2 className="sheettitle">Filters</h2>
         <div className="phead split"><div><h1>Library</h1><p>{crate.projects.length} projects{crate.summary.demo ? ', demo' : ''}</p></div><MiniRing done={Object.keys(flags).length} total={crate.projects.length} label={`${Object.keys(flags).length} of ${crate.projects.length} projects sorted`} /></div>
@@ -373,7 +378,8 @@ export function CratePage({ crate, flags, details, onListen, focus }: { crate: C
         </div>
       </section>
 
-      <aside className={`panel detail${drawer ? ' open' : ''}`} aria-label="Selected project" inert={narrow && !drawer ? true : undefined} style={sel ? { ['--wash' as string]: STONE[sel.stage] } : undefined}>
+      <aside ref={detailRef} className={`panel detail${drawer ? ' open' : ''}`} aria-label="Selected project" inert={narrow && !drawer ? true : undefined} style={sel ? { ['--wash' as string]: STONE[sel.stage] } : undefined}>
+        <div className="sheethandle" aria-hidden><span className="sheetgrab" /></div>
         <button className="dclose" onClick={() => setDrawer(false)} aria-label="Close details"><X size={20} /></button>
         {sel ? <Detail p={sel} flag={flags[sel.id]} onInspect={() => setInspect(sel)} /> : <p className="empty">Pick a project to see its details.</p>}
       </aside>
