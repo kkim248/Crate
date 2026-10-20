@@ -472,6 +472,7 @@ input[type='range']::-moz-range-thumb { width: 10px; height: 10px; border-radius
   .detail { padding: var(--sp-7) var(--sp-4) calc(var(--sp-5) + env(safe-area-inset-bottom)); }
   .filters.sheet.open, .detail.open { transform: none; visibility: visible; transition: transform .35s var(--ease); }
   .filters .phead { display: none; }
+  .filters .btn-primary { display: none; }   /* the Listen tab already does this on a phone */
   .sheettitle { display: block; padding: 0 var(--sp-3) var(--sp-2); font-size: var(--fs-h2); font-weight: 700; letter-spacing: var(--ls-head); }
   .sheetgrab, .detail::before { content: ''; display: block; position: absolute; top: var(--sp-2); left: 50%; transform: translateX(-50%); width: 36px; height: 5px; border-radius: var(--r-full); background: var(--tick); }
   .sheetclose { display: grid; place-items: center; position: absolute; top: var(--sp-3); right: var(--sp-3); width: var(--h-md); height: var(--h-md); border-radius: 50%; background: var(--card); box-shadow: var(--sh-1); }
